@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="rootPane" prefHeight="600.0" prefWidth="400.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SceneController">
+   <children>
+      <Pane fx:id="pane1" layoutX="50.0" layoutY="85.0" prefHeight="430.0" prefWidth="300.0" style="-fx-background-color: fff; -fx-background-radius: 50;">
+         <children>
+            <JFXButton layoutX="75.0" layoutY="353.0" onAction="#nextAction" prefHeight="31.0" prefWidth="68.0" style="-fx-background-color: #00ad74; -fx-background-radius: 20;" text="SIGNIN" textFill="WHITE">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <tooltip>
+                  <Tooltip text="Siguiente" />
+               </tooltip>
+            </JFXButton>
+            <JFXButton layoutX="157.0" layoutY="353.0" prefHeight="31.0" prefWidth="68.0" style="-fx-background-color: #00ad74; -fx-background-radius: 20;" text="SIGNUP" textFill="WHITE">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </JFXButton>
+            <JFXTextField focusColor="#00ad74" labelFloat="true" layoutX="109.0" layoutY="191.0" promptText="Usermail" />
+            <JFXPasswordField focusColor="#00ad74" labelFloat="true" layoutX="109.0" layoutY="246.0" promptText="Password" />
+            <Label alignment="CENTER" layoutX="27.0" layoutY="14.0" prefHeight="47.0" prefWidth="247.0" style="-fx-background-color: #00ad74; -fx-background-radius: 90;" text="CRISTINA GÁBANA" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="logo" fitHeight="62.0" fitWidth="56.0" layoutX="122.0" layoutY="97.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@logo.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="email" fitHeight="31.0" fitWidth="44.0" layoutX="60.0" layoutY="191.0" opacity="0.48" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@email.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="pass" fitHeight="31.0" fitWidth="44.0" layoutX="60.0" layoutY="243.0" opacity="0.48" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Security-Password.png" />
+               </image>
+            </ImageView>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Pane>
+      <Pane fx:id="pane2" layoutX="50.0" layoutY="85.0" prefHeight="430.0" prefWidth="300.0" style="-fx-background-color: fff; -fx-background-radius: 50;">
+         <children>
+            <JFXButton layoutX="75.0" layoutY="353.0" onAction="#backAction" prefHeight="31.0" prefWidth="68.0" style="-fx-background-color: #00ad74; -fx-background-radius: 20;" text="CANCEL" textFill="WHITE">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <tooltip>
+                  <Tooltip text="ATRÁS" />
+               </tooltip>
+            </JFXButton>
+            <Label layoutX="47.0" layoutY="156.0" text="SET YOUR BIRTHDAY FOR A PRESENT!!" />
+            <JFXButton layoutX="157.0" layoutY="353.0" prefHeight="31.0" prefWidth="68.0" style="-fx-background-color: #00ad74; -fx-background-radius: 20;" text="ENJOY" textFill="WHITE">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </JFXButton>
+            <Label alignment="CENTER" layoutX="27.0" layoutY="14.0" prefHeight="47.0" prefWidth="247.0" style="-fx-background-color: #00ad74; -fx-background-radius: 90;" text="WELCOME TO THIS APP" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <JFXDatePicker defaultColor="#00ad74" layoutX="72.0" layoutY="203.0" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
